@@ -1,7 +1,7 @@
 package com.hdprogrammer.remotemobile;
 
-import static com.hdprogrammer.remote69.MainActivity.out;
-import static com.hdprogrammer.remote69.MainActivity.socket;
+import static com.hdprogrammer.remotemobile.MainActivity.out;
+import static com.hdprogrammer.remotemobile.MainActivity.socket;
 
 import android.os.Bundle;
 import android.view.View;
