@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity2" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25sp"/>
+
+            <TextView
+                android:text="PC Boot Options"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnShutDown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:onClick="ShutDown"
+                    android:text="Shut Down"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btnRe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:onClick="Restart"
+                    android:text="Restart"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <TextView
+                android:text="Sound Player Options"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <EditText
+                    android:id="@+id/txtPlaySound"
+                    android:hint="Play Sound"
+                    android:textSize="20sp"
+                    android:layout_width="300sp"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/btnPlaySound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#00CE00"
+                    android:onClick="PlaySound"
+                    android:text="Play"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnStopSoundPlayer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:backgroundTint="#AF0C00"
+                android:onClick="Pause"
+                android:text="Stop Sound Player"
+                android:textSize="20sp" />
+            <TextView
+                android:text="File Opening Commands"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/txtOpenFilePath"
+                    android:hint="Open File via Path"
+                    android:textSize="20sp"
+                    android:layout_width="300sp"
+                    android:layout_height="match_parent"/>
+
+                <Button
+                    android:id="@+id/btnOpenFilePath"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ED6F00"
+                    android:onClick="OpenPath"
+                    android:text="Open"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25sp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/txtOpenFileDesktop"
+                    android:hint="Open File on Desktop"
+                    android:textSize="20sp"
+                    android:layout_width="300sp"
+                    android:layout_height="match_parent"/>
+
+                <Button
+                    android:id="@+id/btnOpenFileDesktop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#00B8A3"
+                    android:onClick="OpenDesktop"
+                    android:text="Open"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:gravity="center"
+                android:text="Superficial Settings"
+                android:textAlignment="center"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <EditText
+                    android:id="@+id/txtVol"
+                    android:inputType="number"
+
+                    android:textSize="20sp"
+                    android:layout_width="100sp"
+                    android:hint="Volume"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/btnVol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CECB00"
+                    android:onClick="Volume"
+                    android:text="Change"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25sp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <EditText
+                    android:id="@+id/txtBgp"
+                    android:textSize="20sp"
+                    android:layout_width="280sp"
+                    android:hint="Change Wallpaper via URL"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/btnBgp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#1400C7"
+                    android:onClick="Wallpaper"
+                    android:text="Change"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <TextView
+                android:text="Individual Commands"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:layout_gravity="left"
+                    android:src="@drawable/pos"
+                    android:layout_width="60sp"
+                    android:layout_height="60sp" />
+
+                <Button
+                    android:id="@+id/btnStartPOS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#488047"
+                    android:onClick="POS"
+                    android:text="Start Power Off Scheduler"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25sp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <EditText
+                    android:id="@+id/txtCmd"
+                    android:textSize="20sp"
+                    android:layout_width="280sp"
+                    android:hint="Enter Cmd Command"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/btnCmd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#2196F3"
+                    android:onClick="Cmd"
+                    android:text="Execute"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25sp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <EditText
+                    android:id="@+id/txtKill"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:hint="Kill Running Process by its Name"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/btnKill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CE0000"
+                    android:onClick="Kill"
+                    android:text="Kill"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25sp"/>
+
+            <LinearLayout
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <EditText
+                    android:id="@+id/txtMsg"
+                    android:layout_gravity="left"
+                    android:textSize="20sp"
+                    android:layout_width="300sp"
+                    android:hint="Send a Message to the pc"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/btnMsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#00D13C"
+                    android:onClick="Msg"
+                    android:text="Send"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
